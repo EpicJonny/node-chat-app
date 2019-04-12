@@ -12,7 +12,7 @@ var generateLocationMessage = (from, latitude, longitude) => {
     return {
         from,
         url: `https://www.google.co.uk/maps?q=${latitude},${longitude}`,
-        createdAt: new Date().getTime()
+        createdAt: moment().valueOf()
     };
 };
 
